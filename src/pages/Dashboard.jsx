@@ -11,11 +11,16 @@ import LinechartBox from "../assets/chart/LinechartBox";
 import { useContext } from "react";
 import DataContext from "../context/Context";
 import DashList from "../assets/dashboard/dashList";
+import { useEffect } from "react";
 
 const Dashboard = () => {
   const Title = "Dashboard";
   const subTitle = "your site at a glance";
   const { home, setHome } = useContext(DataContext);
+  useEffect(() => {
+    setHome(true);
+    return () => setHome(false);
+  }, []);
 
   return (
     <div className=" dark:bg-gray-500  dark:text-gray-200  text-gray-700 overflow-x-auto scrollbar-thin overflow-y-auto dark:scrollbar-track-gray-700 dark:scrollbar-thumb-gray-800 scrollbar-track-gray-500 scrollbar-thumb-gray-600 p-1 h-full ">
@@ -47,7 +52,10 @@ const Dashboard = () => {
           Value={50}
         />
         <div className=" col-span-12 md:col-span-7 lg:col-span-8     grid grid-flow-row grid-col-12 gap-2 sm:gap-4 w-full h-3/5 ">
-          <div className="dark:bg-gray-500 bg-gray-200 flex flex-col  col-span-12 h-52 w-full" onDoubleClick = {()=>setHome(!home)}>
+          <div
+            className="dark:bg-gray-500 bg-gray-200 flex flex-col  col-span-12 h-52 w-full"
+            
+          >
             <LinechartBox />
           </div>
           <div className="dark:bg-gray-400 bg-gray-300 flex flex-col  p-1 col-span-12 md:col-span-6  h-52 w-auto">
@@ -59,7 +67,7 @@ const Dashboard = () => {
           {/* <div className="p-6 col-span-4 bg-green-300"></div> */}
         </div>
         <div className="dark:bg-gray-700 bg-gray-300 col-span-12 md:col-span-5 lg:col-span-4  p-1  ">
-          <DashList/>
+          <DashList />
         </div>
       </div>
     </div>
