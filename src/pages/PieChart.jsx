@@ -1,6 +1,5 @@
 import React from "react";
 import HeadTitle from "../assets/HeadTitle";
-import { ResponsivePie } from "@nivo/pie";
 import useDarkMode from "../Api/useDarkMode";
 import PiechartBox from "../assets/chart/PiechartBox";
 

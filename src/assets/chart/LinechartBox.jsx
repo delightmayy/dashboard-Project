@@ -1,6 +1,5 @@
 import React from 'react'
 import { ResponsiveLine } from "@nivo/line";
-import useDarkMode from "../../Api/useDarkMode";
 import { useContext } from 'react';
 import DataContext from '../../context/Context';
 

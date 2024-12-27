@@ -1,6 +1,5 @@
 import React from "react";
 import HeadTitle from "../assets/HeadTitle";
-import { ResponsiveLine } from "@nivo/line";
 import LinechartBox from "../assets/chart/LinechartBox";
 
 const LineChart = () => {

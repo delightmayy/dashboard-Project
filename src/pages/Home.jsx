@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import Headbar from "../assets/Headbar";
 import SideNav from "../assets/sidebar/SideNav";
 import { Routes, Route } from "react-router-dom";

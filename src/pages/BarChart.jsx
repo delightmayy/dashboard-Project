@@ -1,6 +1,5 @@
 import React from "react";
 import HeadTitle from "../assets/HeadTitle";
-import { ResponsiveBar } from "@nivo/bar";
 import { useContext } from "react";
 import DataContext from "../context/Context";
 import BarchartBox from "../assets/chart/BarchartBox";
