@@ -51,8 +51,6 @@ const SideNav = ({}) => {
               // only apply styles on first level elements of the tree
               if (level === 0)
                 return {
-                  color: disabled ? "#f5d9ff" : "white",
-                  color: active ? "#78D664" : "white",
                   color: mode ? "white" : "3d3f42",
                   marginLeft: width < 768 || collapsed ? "-10px" : "0px",
                 };
