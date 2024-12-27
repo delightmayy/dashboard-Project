@@ -57,7 +57,7 @@ const Headbar = () => {
           onClick={() => navigate("/profileform")}
         />
 
-        <BellIcon className="w-4 dark:hover:fill-white hover:fill-gray-800 " />
+        <BellIcon className="w-4 dark:hover:fill-white hover:fill-gray-800 hover:cursor-not-allowed " />
       </div>
     </div>
   );
