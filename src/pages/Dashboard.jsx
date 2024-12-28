@@ -10,7 +10,7 @@ import PiechartBox from "../assets/chart/PiechartBox";
 import LinechartBox from "../assets/chart/LinechartBox";
 import { useContext } from "react";
 import DataContext from "../context/Context";
-import DashList from "../assets/dashboard/dashList";
+import DashList from "../assets/dashboard/DashList";
 import { useEffect } from "react";
 
 const Dashboard = () => {
