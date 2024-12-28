@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardTitle from "../assets/dashboard/dashboardTitle";
+import DashboardTitle from "../assets/dashboard/DashboardTitle";
 import Box from "../assets/dashboard/Box";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { UsersIcon } from "@heroicons/react/24/solid";
